@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="If you want to travel to space.Let’s face it; if you want to go to space, you might as well genuinely go to 
+  outer space and not hover kind of on the edge of it. Well sit back, and relax 
+  because we’ll give you a truly out of this world experience!">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+
+</head>
+
+<body >
+  <header>
+    <nav>
+      <div
+        class="w-[100vw] flex items-center justify-between lg:mt-4 relative"
+        id="navBar"
+      >
+        <div class="flex items-center ml-8">
+          <img src="./assets/shared/logo.svg" alt="Logo" />
+          <div
+            class="line bg-white  h-[0.5px] lg:w-[38%] absolute left-[9.5rem] z-10 lg:block hidden"
+          ></div>
+        </div>
+        <div
+          class="sm:hidden cursor-pointer flex flex-col"
+          id="mobile-menu-toggle"
+        >
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div
+          class="w-[55%] bg-white bg-opacity-10 backdrop-blur-2xl"
+          id="navItem"
+        >
+        <ul
+        class="custom-list flex flex-col sm:flex-row items-center justify-center text-white lg:gap-12 gap-5 tracking-[2.3px] text-[14px] lg:text-[16px]"
+        style="font-family: Barlow Condensed"
+      >
+        <li
+          id="homeBtn"
+          class="transition-all hover:border-b-4 border-white py-7 cursor-pointer"
+        >
+          <a href="#">Home</a>
+        </li>
+        <li
+          id="destinationBtn"
+          class="transition-all hover:border-b-4 border-white py-7 cursor-pointer"
+        >
+          <a href="#">Destination</a>
+        </li>
+        <li
+          id="crewBtn"
+          class="transition-all hover:border-b-4 border-white py-7 cursor-pointer"
+        >
+          <a href="#">Crew</a>
+        </li>
+        <li
+          id="technologyBtn"
+          class="transition-all hover:border-b-4 border-white py-7 cursor-pointer"
+        >
+          <a href="#">Technology</a>
+        </li>
+      </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+<main id="home">
+
+  <div class="mt-[7rem] flex lg:flex-row flex-col justify-between lg:w-[77%] sm:w-full w-[80%] items-center mx-auto " style="height: calc(100vh - 250px);">
+  <div class=" text-[#D0D6F9]">
+
+ <p class=" 2xl:text-[38px] sm:text-[28px] text-[15px] font-[400] tracking-[4px] lg:text-start text-center" style="font-family: 'Barlow Condensed', sans-serif;
+ "> SO, YOU WANT TO TRAVEL TO</p>
+  <h1 class="lg:text-[150px] 2xl:text-[180px] sm:text-[150px] text-[70px] text-white lg:text-start text-center  " style="font-family: 'Bellefair', serif;">SPACE</h1>
+  <p class="text-justify tracking-[1px] text-[14px] 2xl:text-[24px] font-[400] lg:w-[26rem] sm:w-[26rem] w-full leading-[28px] " style="font-family: 'Barlow', sans-serif;
+  ">
+  Let’s face it; if you want to go to space, you might as well genuinely go to 
+  outer space and not hover kind of on the edge of it. Well sit back, and relax 
+  because we’ll give you a truly out of this world experience!
+</p>
+</div>
+<div class="mt-16 flex items-center justify-center  ">
+
+  <button type="button" id="Explorebtn" class="items-center justify-center cursor-pointer flex h-[14rem] w-[14rem] sm:h-[14rem] sm:w-[14rem]
+  2xl:h-[18rem] 2xl:w-[18rem] bg-white rounded-full select-none text-[32px] font-[400] transform transition-transform 
+  hover:scale-110"  style="  font-family: 'Bellefair', serif; " >
+    
+
+      EXPLORE
+ 
+  </button>
+  
+</div>
+
+</div>
+</main>
+<div id="pages">
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

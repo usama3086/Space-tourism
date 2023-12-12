@@ -1,0 +1,70 @@
+body {
+    font-family: "Bellefair", serif;
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    background-size: cover;
+  }
+  .active{
+    border-bottom: 4px solid white;
+        }
+ #Explorebtn:hover {
+          transform: scale(1.1);
+        }
+        @media screen and (min-width: 1024px) {
+        
+          .h-tech {
+              height: calc(100vh - 300px)
+          }
+      
+         
+      }
+  
+  @media only screen and (max-width: 639px) {
+    body {
+      background-image: url(./assets/home/background-home-mobile.jpg);
+    }
+ 
+    #navBar {
+      padding: 2rem 2rem 0 0;
+    }
+
+    #mobile-menu-toggle .bar {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+    }
+    #navItem {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 640px) and (max-width: 1023px) {
+    body {
+      background-image: url(./assets/home/background-home-tablet.jpg);
+    }
+    ul.custom-list {
+      list-style: none;
+    }
+
+    ul.custom-list li::before {
+      list-style: none;
+    }
+  }
+
+  ul.custom-list li::before {
+    content: none;
+  }
+
+  @media screen and (min-width: 769px) {
+    ul.custom-list {
+      list-style-type: none;
+      counter-reset: custom-counter -1;
+    }
+
+    ul.custom-list li::before {
+      content: counter(custom-counter, decimal-leading-zero);
+      counter-increment: custom-counter;
+      margin-right: 10px;
+      font-weight: 500;
+    }
+  }
